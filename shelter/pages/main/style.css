@@ -35,7 +35,6 @@ li {
 }
 
 .logo {
-  width: 184px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -62,7 +61,6 @@ li {
 
 .menu {
   display: flex;
-  width: 443px;
   padding-top: 16px;
   justify-content: flex-end;
   gap: 35px;
@@ -88,7 +86,6 @@ li {
 }
 
 .content-start {
-  width: 460px;
   margin-top: 163px;
   display: flex;
   flex-direction: column;
@@ -144,7 +141,6 @@ li {
 }
 
 .content-about {
-  width: 430px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -160,6 +156,7 @@ li {
 }
 
 .about-item {
+  width: 430px;
   font-family: "Arial";
   font-size: 15px;
   line-height: 160%;
@@ -219,7 +216,6 @@ li {
 }
 
 .pets-items {
-  width: 270px;
   background-color: #FAFAFA;
   display: flex;
   flex-direction: column;
@@ -445,4 +441,78 @@ li {
   color: #B2B2B2;
   font-size: 12px;
   line-height: 18px;
+}
+
+.footer-container {
+  background: url("../../assets/images/footer-gradient-background.png");
+  padding: 40px 40px 0 40px;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 16px;
+}
+
+.footer-locations {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  padding-top: 16px;
+}
+
+.contacts-header, .locations-header {
+  font-family: "Georgia";
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+
+.contacts-mail, .contacts-phone, .locations-boston, .locations-london {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-mail {
+  width: 40px;
+  height: 32px;
+  background: url("../../assets/svg/icon-email.svg");
+}
+
+.name-mail, .phone-number, .boston, .london {
+  font-family: "Georgia";
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+}
+
+.icon-phone {
+  width: 40px;
+  height: 32px;
+  background: url("../../assets/svg/icon-phone.svg");
+}
+
+.icon-locations1 {
+  width: 22px;
+  height: 32px;
+  background: url("../../assets/svg/pin.svg");
+}
+
+.icon-locations2 {
+  width: 22px;
+  height: 32px;
+  background: url("../../assets/svg/pin.svg");
+}
+
+.footer-puppy {
+  width: 300px;
+  height: 310px;
+  background: url("../../assets/svg/footer-puppy.svg");
 }/*# sourceMappingURL=style.css.map */
