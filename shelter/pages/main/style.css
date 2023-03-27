@@ -18,8 +18,17 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  font-style: italic;
+  color: #F1CDB3;
+}
+
 li {
   list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -68,6 +77,15 @@ li {
 
 .menu li:first-child {
   border-bottom: 3px solid #F1CDB3;
+}
+
+.menu li:first-child .menu-item {
+  color: #FAFAFA;
+}
+
+.menu li:first-child .menu-item:hover {
+  color: #FAFAFA;
+  font-style: normal;
 }
 
 .menu-item {
@@ -125,6 +143,14 @@ li {
   border: none;
   text-align: center;
   color: #292929;
+  transition: all 0.5s;
+}
+
+.button-start:hover {
+  background: #FDDCC4;
+  transform: scale(1.1);
+  color: #292929;
+  font-style: normal;
 }
 
 .section-about {
@@ -197,6 +223,7 @@ li {
   background: url("../../assets/svg/Arrow.svg");
   background-repeat: no-repeat;
   background-position: center center;
+  transition: all 1s;
 }
 
 .button-right {
@@ -207,6 +234,12 @@ li {
   background: url("../../../assets/svg/Arrow2.svg");
   background-repeat: no-repeat;
   background-position: center center;
+  transition: all 1s;
+}
+
+.button-left:hover, .button-right:hover {
+  background-color: #FDDCC4;
+  transform: scale(1.2);
 }
 
 .pets-item {
@@ -222,6 +255,11 @@ li {
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+  transition: transform 1s;
+}
+
+.pets-items:hover {
+  transform: scale(1.2);
 }
 
 .pets-photo1 {
@@ -262,6 +300,11 @@ li {
   margin-bottom: 30px;
   background-color: white;
   letter-spacing: 0.06em;
+  transition: all 0.5s;
+}
+
+.pets-button-items:hover {
+  background: #FDDCC4;
 }
 
 .button-pets {
@@ -275,6 +318,14 @@ li {
   letter-spacing: 0.06em;
   color: #292929;
   text-align: center;
+  transition: all 0.5s;
+}
+
+.button-pets:hover {
+  background: #FDDCC4;
+  transform: scale(1.1);
+  color: #292929;
+  font-style: normal;
 }
 
 .help {
@@ -416,6 +467,10 @@ li {
   color: #545454;
 }
 
+.credit-number:hover {
+  color: #FFFFFF;
+}
+
 .donation-header {
   font-family: "Georgia";
   font-size: 35px;
@@ -477,6 +532,10 @@ li {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.name-mail:hover, .phone-number:hover, .boston:hover, .london:hover {
+  color: #FFFFFF;
 }
 
 .icon-mail {

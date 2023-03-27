@@ -14,8 +14,17 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
+}
+
+a:hover {
+  font-style: italic;
+  color: #F1CDB3;
 }
 
 li {
@@ -68,7 +77,7 @@ li {
   font-family: "Arial";
   font-size: 15px;
   line-height: 160%;
-  color: #CDCDCD;
+  color: #545454;
 }
 
 .menu li:nth-child(2) {
@@ -77,6 +86,7 @@ li {
 
 .menu li:nth-child(2) .menu-item {
   color: #292929;
+  font-style: normal;
 }
 
 .section-pets {
@@ -117,6 +127,11 @@ li {
   color: #545454;
   align-items: center;
   background-color: #FAFAFA;
+  transition: transform 1s;
+}
+
+.pets-items:hover {
+  transform: scale(1.2);
 }
 
 .pets-photo1 {
@@ -179,6 +194,11 @@ li {
   margin-bottom: 30px;
   letter-spacing: 0.06em;
   background-color: #FAFAFA;
+  transition: all 0.5s;
+}
+
+.pets-button-items:hover {
+  background: #FDDCC4;
 }
 
 .block-button-pets {
@@ -221,6 +241,7 @@ li {
   background: url("../../assets/svg/included.svg");
   background-repeat: no-repeat;
   background-position: center center;
+  transition: all 1s;
 }
 
 .button5 {
@@ -228,6 +249,12 @@ li {
   background: url("../../assets/svg/includedtwo.svg");
   background-repeat: no-repeat;
   background-position: center center;
+  transition: all 1s;
+}
+
+.button4:hover, .button5:hover {
+  background-color: #FDDCC4;
+  transform: scale(1.2);
 }
 
 .footer-container {
@@ -278,6 +305,10 @@ li {
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #F1CDB3;
+}
+
+.name-mail:hover, .phone-number:hover, .boston:hover, .london:hover {
+  color: #FFFFFF;
 }
 
 .icon-phone {
