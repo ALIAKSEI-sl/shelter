@@ -25,8 +25,7 @@ a {
 }
 
 a:hover {
-  font-style: italic;
-  color: #F1CDB3;
+  color: #292929;
 }
 
 li {
@@ -54,6 +53,11 @@ h2 {
   justify-content: space-between;
   gap: 10px;
   color: #545454;
+  transition: all 1s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .logo-header {
@@ -92,7 +96,7 @@ h2 {
 
 .menu li:nth-child(2) .menu-item {
   color: #292929;
-  font-style: normal;
+  cursor: default;
 }
 
 .section-pets {
@@ -140,6 +144,10 @@ h2 {
 
 .pets-items:hover {
   transform: scale(1.2);
+
+  .pets-button-items {
+    background: #FDDCC4;
+  }
 }
 
 .pets-photo1 {
@@ -205,10 +213,6 @@ h2 {
   transition: all 0.5s;
 }
 
-.pets-button-items:hover {
-  background: #FDDCC4;
-}
-
 .block-button-pets {
   display: flex;
   justify-content: center;
@@ -263,6 +267,7 @@ h2 {
 .button4:hover, .button5:hover {
   background-color: #FDDCC4;
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 .footer {

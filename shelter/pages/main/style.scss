@@ -21,8 +21,7 @@ a {
 }
 
 a:hover {
-  font-style: italic;
-  color: #F1CDB3;
+  color: #FAFAFA;
 }
 
 li {
@@ -58,6 +57,11 @@ html {
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
+  transition: all 1s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .logo-header {
@@ -96,7 +100,7 @@ html {
 
 .menu li:first-child .menu-item:hover {
   color: #FAFAFA;
-  font-style: normal;
+  cursor: default;
 }
 
 .menu-item {
@@ -165,7 +169,6 @@ html {
   background: #FDDCC4;
   transform: scale(1.1);
   color: #292929;
-  font-style: normal;
 }
 
 .section-about {
@@ -258,6 +261,7 @@ html {
 
 .button-left:hover, .button-right:hover {
   background-color: #FDDCC4;
+  cursor: pointer;
   transform: scale(1.2);
 }
 
@@ -279,6 +283,11 @@ html {
 
 .pets-items:hover {
   transform: scale(1.2);
+  cursor: pointer;
+
+  .pets-button-items {
+    background: #FDDCC4;
+  }
 }
 
 .pets-photo1 {
@@ -322,10 +331,6 @@ html {
   transition: all 0.5s;
 }
 
-.pets-button-items:hover {
-  background: #FDDCC4;
-}
-
 .button-pets {
   width: 261px;
   height: 52px;
@@ -344,7 +349,6 @@ html {
   background: #FDDCC4;
   transform: scale(1.1);
   color: #292929;
-  font-style: normal;
 }
 
 .help {
