@@ -284,6 +284,7 @@ html {
 }
 .pets-items:hover .pets-button-items {
   background: #FDDCC4;
+  cursor: pointer;
 }
 
 .pets-photo1 {

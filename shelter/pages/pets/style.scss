@@ -144,9 +144,11 @@ h2 {
 
 .pets-items:hover {
   transform: scale(1.2);
+  cursor: pointer;
 
   .pets-button-items {
     background: #FDDCC4;
+    cursor: pointer;
   }
 }
 
