@@ -57,7 +57,7 @@ h2 {
 }
 
 .logo:hover {
-  transform: scale(1.1);
+  // transform: scale(1.1);
 }
 
 .logo-header {
@@ -139,12 +139,15 @@ h2 {
   color: #545454;
   align-items: center;
   background-color: #FAFAFA;
-  transition: transform 1s;
+  border-radius: 9px;
+  transition: all 1s;
 }
 
 .pets-items:hover {
-  transform: scale(1.2);
+  // transform: scale(1.2);
   cursor: pointer;
+  background-color: #FFFFFF;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 
   .pets-button-items {
     background: #FDDCC4;
@@ -212,7 +215,7 @@ h2 {
   margin-bottom: 30px;
   letter-spacing: 0.06em;
   background-color: #FAFAFA;
-  transition: all 0.5s;
+  transition: all 1s;
 }
 
 .block-button-pets {
@@ -268,7 +271,7 @@ h2 {
 
 .button4:hover, .button5:hover {
   background-color: #FDDCC4;
-  transform: scale(1.2);
+  // transform: scale(1.2);
   cursor: pointer;
 }
 
