@@ -1,0 +1,50 @@
+@media (min-width: 768px) and (max-width: 1279px) {
+  .pets-items:nth-child(7) {
+    display: none;
+  }
+
+  .pets-items:nth-child(8) {
+    display: none;
+  }
+
+  .header-container {
+    padding: 30px;
+  }
+
+  .block-pets {
+    padding: 80px 40px 76px 40px;
+    gap: 30px;
+  }
+
+  .pets-container {
+    justify-content: center;
+    row-gap: 30px;
+     padding: 0;
+  }
+
+  .block-button-pets {
+    padding-top: 10px;
+  }
+
+  .footer-container {
+    padding: 30px 30px 0 30px;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 65px;
+    justify-content: center;
+  }
+
+  .footer-contacts {
+    padding-top: 0;
+    padding-left: 34px;
+  }
+
+  .footer-locations {
+    padding-top: 0;
+    padding-right: 34px;
+  }
+
+  .boston {
+    width: 259px;
+  }
+}
