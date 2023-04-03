@@ -1,0 +1,126 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  .header-container {
+    nav {
+      display: none;
+    }
+  }
+
+  .header-container {
+    padding: 30px 20px 30px 20px;
+    align-items: center;
+  }
+
+  .menu-burger {
+    width: 30px;
+    height: 22px;
+    display: block;
+    position: relative;
+  }
+
+  .menu-burger span,
+  .menu-burger::before,
+  .menu-burger::after {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    background-color: #000000;
+  }
+
+  .menu-burger::before,
+  .menu-burger::after {
+    content: "";
+  }
+
+  .menu-burger::before {
+    top: 0;
+  }
+
+  .menu-burger::after {
+    bottom: 0;
+  }
+
+  .menu-burger span {
+    top: 10px;
+  }
+
+  .block-pets {
+    padding: 42px 0;
+    gap: 42px;
+  }
+
+  .pets-header {
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  .pets-container {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .pets-items:nth-child(4),
+  .pets-items:nth-child(5),
+  .pets-items:nth-child(6),
+  .pets-items:nth-child(7),
+  .pets-items:nth-child(8) {
+    display: none;
+  }
+
+  .block-button-pets {
+    gap: 10px;
+  }
+
+  .footer-container {
+    padding: 30px 10px 0 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-contacts {
+    padding-top: 0;
+  }
+
+  .locations-header, .contacts-header {
+    display: none;
+  }
+
+  .locations-header-320, .contacts-header-320 {
+    display: block;
+    font-family: 'Georgia';
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+  }
+
+  .contacts-mail, .contacts-phone {
+    justify-content: center;
+  }
+
+  .footer-locations {
+    padding-top: 0;
+    gap: 40px;
+  }
+
+  .locations-boston, .locations-london {
+    justify-content: flex-start;
+  }
+
+  .footer-puppy {
+    width: 260px;
+    height: 269px;
+    background: url('../../../assets/svg/footer-puppy-320.svg');
+  }
+
+  .locations-header-320, .contacts-header-320 {
+    display: block;
+    font-family: 'Georgia';
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+  }
+}

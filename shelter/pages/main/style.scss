@@ -1,3 +1,6 @@
+@import url(./mediaQueries/style-768px.scss);
+@import url(./mediaQueries/style-320px.scss);
+
 @font-face {
   font-family: 'Georgia';
   src: url("../../assets/fonts/georgia/georgia-regular.ttf");
@@ -37,7 +40,7 @@ html {
 }
 
 .wrapper {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -60,10 +63,6 @@ html {
   transition: all 1s;
 }
 
-// .logo:hover {
-//   transform: scale(1.1);
-// }
-
 .logo-header {
   color: #F1CDB3;
   font-family: 'Georgia';
@@ -80,6 +79,10 @@ html {
   letter-spacing: 0.1em;
   color: #FFFFFF;
   text-align: right;
+}
+
+.menu-burger {
+  display: none;
 }
 
 .menu {
@@ -167,7 +170,6 @@ html {
 
 .button-start:hover {
   background: #FDDCC4;
-  // transform: scale(1.1);
   color: #292929;
 }
 
@@ -262,7 +264,6 @@ html {
 .button-left:hover, .button-right:hover {
   background-color: #FDDCC4;
   cursor: pointer;
-  // transform: scale(1.2);
 }
 
 .pets-item {
@@ -283,7 +284,6 @@ html {
 }
 
 .pets-items:hover {
-  // transform: scale(1.2);
   cursor: pointer;
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
   background-color: #FFFFFF;
@@ -352,7 +352,6 @@ html {
 
 .button-pets:hover {
   background: #FDDCC4;
-  // transform: scale(1.1);
   color: #292929;
 }
 
@@ -362,7 +361,6 @@ html {
   flex-direction: column;
   align-items: center;
   gap: 60px;
-
 }
 
 .help-header {
@@ -589,6 +587,10 @@ html {
   color: #F1CDB3;
 }
 
+.boston {
+  width: 259px;
+}
+
 .icon-phone {
   width: 40px;
   height: 32px;
@@ -611,4 +613,8 @@ html {
   width: 300px;
   height: 310px;
   background: url('../../assets/svg/footer-puppy.svg');
+}
+
+.contacts-header-320, .locations-header-320 {
+  display: none;
 }

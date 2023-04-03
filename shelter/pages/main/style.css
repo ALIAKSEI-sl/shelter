@@ -1,3 +1,5 @@
+@import url(./mediaQueries/style-768px.scss);
+@import url(./mediaQueries/style-320px.scss);
 @font-face {
   font-family: "Georgia";
   src: url("../../assets/fonts/georgia/georgia-regular.ttf");
@@ -35,7 +37,7 @@ html {
 }
 
 .wrapper {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -74,6 +76,10 @@ html {
   letter-spacing: 0.1em;
   color: #FFFFFF;
   text-align: right;
+}
+
+.menu-burger {
+  display: none;
 }
 
 .menu {
@@ -577,6 +583,10 @@ html {
   color: #F1CDB3;
 }
 
+.boston {
+  width: 259px;
+}
+
 .icon-phone {
   width: 40px;
   height: 32px;
@@ -599,4 +609,8 @@ html {
   width: 300px;
   height: 310px;
   background: url("../../assets/svg/footer-puppy.svg");
+}
+
+.contacts-header-320, .locations-header-320 {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

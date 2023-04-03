@@ -1,3 +1,5 @@
+@import url(./mediaQueries/style-768px.scss);
+@import url(./mediaQueries/style-320px.scss);
 @font-face {
   font-family: "Georgia";
   src: url("../../assets/fonts/georgia/georgia-regular.ttf");
@@ -35,7 +37,7 @@ h2 {
 }
 
 .wrapper {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -68,6 +70,10 @@ h2 {
   line-height: 15px;
   letter-spacing: 0.1em;
   text-align: right;
+}
+
+.menu-burger {
+  display: none;
 }
 
 .menu {
@@ -322,6 +328,10 @@ h2 {
   color: #F1CDB3;
 }
 
+.boston {
+  width: 259px;
+}
+
 .name-mail:hover, .phone-number:hover, .boston:hover, .london:hover {
   color: #FFFFFF;
 }
@@ -348,4 +358,8 @@ h2 {
   width: 300px;
   height: 310px;
   background: url("../../assets/svg/footer-puppy.svg");
+}
+
+.contacts-header-320, .locations-header-320 {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
