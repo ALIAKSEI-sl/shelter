@@ -1,8 +1,31 @@
 @media (min-width: 320px) and (max-width: 767px) {
-  .header-container {
-    nav {
-      display: none;
-    }
+  body.open-menu {
+    overflow: hidden;
+  }
+
+  .burger {
+    width: 320px;
+    height: 100%;
+    overflow: scroll;
+    padding: 248px 38px 0 39px;
+    background-color: #292929;
+    transform: translateX(100%);
+    transition: transform 1s ease;
+  }
+
+  .burger-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    background: rgba(41, 41, 41, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1s ease;
   }
 
   .header-container {
@@ -15,6 +38,37 @@
     height: 22px;
     display: block;
     position: relative;
+    transition: transform 0.6s ease;
+    z-index: 2;
+  }
+
+  .burger-wrapper.active {
+    opacity: 1;
+
+    .burger {
+      transform: translateX(0);
+    }
+  }
+
+  .menu-burger.active {
+    transform: rotate(90deg);
+  }
+
+  .menu {
+    flex-direction: column;
+    padding: 0 0 40px 0;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .menu-item {
+    font-size: 32px;
+    line-height: 51.2px;
+  }
+
+  .menu li:nth-child(2) .menu-item {
+    color: white;
+    cursor: default;
   }
 
   .menu-burger span,
