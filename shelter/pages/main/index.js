@@ -121,31 +121,77 @@ CAROUSEL.addEventListener("animationend", (animationEvent) => {
 
   const ITEM_ACTIVE_HTML = document.querySelector("#block-card-active").innerHTML
 
-  let nextCard;
+  let nextCardItem;
   if (animationEvent.animationName === "move-left") {
     CAROUSEL.classList.remove("transition-left");
-    nextCard = ITEM_LEFT;
+    nextCardItem = ITEM_LEFT;
     document.querySelector("#block-card-active").innerHTML = ITEM_LEFT.innerHTML;
     ITEM_RIGHT.innerHTML = ITEM_ACTIVE_HTML;
   } else {
     CAROUSEL.classList.remove("transition-right");
-    nextCard = ITEM_RIGHT;
+    nextCardItem = ITEM_RIGHT;
     document.querySelector("#block-card-active").innerHTML = ITEM_RIGHT.innerHTML;
     ITEM_LEFT.innerHTML = ITEM_ACTIVE_HTML;
   }
  
   createNextCard();
-  console.log(nextCard)
   for (let i = 0; i < 3; i++) {
-    const card = nextCard.children[i];
+    const card = nextCardItem.children[i];
 
     const photo = card.querySelector('.pets-photo')
     const name = card.querySelector('.pets-name');
+    // const btn = card.querySelector('.pets-button-items');
     photo.style.background = `url(${pets[[nextCard[i]]].img})`;
     name.textContent = `${pets[[nextCard[i]]].name}`;
-
+    // btn.addEventListener('click', openPopup)
   }
-
+  const petsButton = document.querySelectorAll(".pets-button-items");
+  petsButton.forEach((btn => btn.addEventListener('click', openPopup)))
   BTN_LEFT.addEventListener("click", moveLeft);
   BTN_RIGHT.addEventListener("click", moveRight);
 })
+
+const petsButton = document.querySelectorAll(".pets-button-items");
+const popupWrap = document.querySelector(".popup-wrap");
+const popupBtt = document.querySelector(".popup-btt");
+const popupBlock = document.querySelector(".popup-block");
+const popupImg = document.querySelector(".popup-img");
+const popupName = document.querySelector(".popup-name");
+const popupBreed = document.querySelector(".popup-breed");
+const popupDescription = document.querySelector(".popup-description");
+const popupList = document.querySelector(".popup-list");
+
+petsButton.forEach((btn => btn.addEventListener('click', openPopup)))
+
+function openPopup(event) {
+  const parent = event.target.parentElement; 
+  const name = parent.querySelector(".pets-name").textContent;
+  const info = pets.find((item) => {
+    return item.name === name;
+  })
+  popupImg.style.backgroundImage = `url(${info.img})`;
+  console.log(popupName)
+  popupName.textContent = info.name;
+  popupBreed.textContent = `${info.type} - ${info.breed}`;
+  popupDescription.textContent = info.description;
+  popupList.children[0].innerHTML = `<span>Age:</span> ${info.age}`
+  popupList.children[1].innerHTML = `<span>Inoculations:</span> ${info.inoculations.join(', ')}`
+  popupList.children[2].innerHTML = `<span>Diseases:</span> ${info.diseases.join(', ')}</span>`
+  popupList.children[3].innerHTML = `<span>Parasites:</span> ${info.parasites.join(', ')}`
+
+  popupWrap.classList.add('active');
+  document.body.classList.toggle('open-menu');
+}
+
+function closePopup() {
+  popupWrap.classList.remove('active');
+  document.body.classList.toggle('open-menu');
+}
+
+
+popupBtt.addEventListener('click', closePopup);
+popupWrap.addEventListener('click', (event) => {
+  if (event.target === popupWrap || event.target === popupBlock) {
+    closePopup();    
+  }
+});

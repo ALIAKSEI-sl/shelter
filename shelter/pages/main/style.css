@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(./mediaQueries/style-768px.scss);
 @import url(./mediaQueries/style-320px.scss);
 @font-face {
@@ -38,6 +39,10 @@ h2 {
 
 html {
   scroll-behavior: smooth;
+}
+
+body.open-menu {
+  overflow: hidden;
 }
 
 .wrapper {
@@ -652,4 +657,123 @@ html {
 
 .hidden {
   display: none;
+}
+
+.popup-wrap {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 41, 41, 0.6);
+}
+
+.popup-wrap.active {
+  display: flex;
+}
+
+.popup {
+  display: flex;
+  width: 900px;
+  height: 500px;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  background: #FAFAFA;
+  border-radius: 9px;
+  margin-bottom: 52px;
+}
+
+.popup-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-btt {
+  position: relative;
+  left: 890px;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  background-image: url(../../assets/svg/close.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.popup-btt:hover {
+  background: #FDDCC4;
+  cursor: pointer;
+  background-image: url(../../assets/svg/close.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.popup-img {
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+}
+
+.about-block {
+  padding-top: 50px;
+  padding-left: 29px;
+  width: 351px;
+  height: 362px;
+}
+
+.popup-name {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+  color: #000000;
+  padding-bottom: 10px;
+}
+
+.popup-breed {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.popup-description {
+  width: 350px;
+  padding: 40px 0;
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.popup-list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.popup-list li::before {
+  color: #F1CDB3;
+  content: "•";
+  padding-right: 10px;
+}
+
+.popup-list li {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+
+.popup-list span {
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
