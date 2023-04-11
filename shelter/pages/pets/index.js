@@ -1,3 +1,5 @@
+import pets from '../main/pets.json' assert {type: 'json'};
+
 //burger
 const burgerWrap = document.querySelector('.burger-wrapper');
 const menuBurger = document.querySelector('.menu-burger');
@@ -939,3 +941,48 @@ button2.classList.add('button-enabled');
 button1.classList.add('button-enabled'); 
 } 
 }
+
+const petsButton = document.querySelectorAll(".pets-button-items");
+const popupWrap = document.querySelector(".popup-wrap");
+const popupBtt = document.querySelector(".popup-btt");
+const popupBlock = document.querySelector(".popup-block");
+const popupImg = document.querySelector(".popup-img");
+const popupName = document.querySelector(".popup-name");
+const popupBreed = document.querySelector(".popup-breed");
+const popupDescription = document.querySelector(".popup-description");
+const popupList = document.querySelector(".popup-list");
+
+petsButton.forEach((btn => btn.addEventListener('click', openPopup)))
+
+function openPopup(event) {
+  const parent = event.target.parentElement; 
+  const name = parent.querySelector(".pets-name").textContent;
+  const info = pets.find((item) => {
+    return item.name === name;
+  })
+  popupImg.style.backgroundImage = `url(${info.img})`;
+  console.log(popupName)
+  popupName.textContent = info.name;
+  popupBreed.textContent = `${info.type} - ${info.breed}`;
+  popupDescription.textContent = info.description;
+  popupList.children[0].innerHTML = `<span>Age:</span> ${info.age}`
+  popupList.children[1].innerHTML = `<span>Inoculations:</span> ${info.inoculations.join(', ')}`
+  popupList.children[2].innerHTML = `<span>Diseases:</span> ${info.diseases.join(', ')}</span>`
+  popupList.children[3].innerHTML = `<span>Parasites:</span> ${info.parasites.join(', ')}`
+
+  popupWrap.classList.add('active');
+  document.body.classList.toggle('open-menu');
+}
+
+function closePopup() {
+  popupWrap.classList.remove('active');
+  document.body.classList.toggle('open-menu');
+}
+
+
+popupBtt.addEventListener('click', closePopup);
+popupWrap.addEventListener('click', (event) => {
+  if (event.target === popupWrap || event.target === popupBlock) {
+    closePopup();    
+  }
+});

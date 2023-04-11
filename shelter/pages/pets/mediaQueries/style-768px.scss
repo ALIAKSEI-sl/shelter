@@ -47,4 +47,37 @@
   .boston {
     width: 259px;
   }
+
+  .popup {
+    width: 630px;
+    height: 350px;
+  }
+
+  .popup-img {
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+  }
+
+  .about-block {
+    padding-top: 10px;
+    padding-left: 11px;
+    width: 260px;
+    height: 303px;
+  }
+
+  .popup-description {
+    padding: 20px 0;
+  font-size: 13px;
+  line-height: 14px;
+  width: 260px;
+  }
+
+  .popup-list {
+    gap: 5px;
+  }
+
+  .popup-btt {
+    left: 621px;
+  }
 }
