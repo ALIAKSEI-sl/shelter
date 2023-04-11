@@ -961,7 +961,6 @@ function openPopup(event) {
     return item.name === name;
   })
   popupImg.style.backgroundImage = `url(${info.img})`;
-  console.log(popupName)
   popupName.textContent = info.name;
   popupBreed.textContent = `${info.type} - ${info.breed}`;
   popupDescription.textContent = info.description;

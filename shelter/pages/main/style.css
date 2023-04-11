@@ -266,7 +266,8 @@ body.open-menu {
   transition: all 1s;
 }
 
-.button-left:hover, .button-right:hover {
+.button-left:hover,
+.button-right:hover {
   background-color: #FDDCC4;
   cursor: pointer;
 }
@@ -553,7 +554,8 @@ body.open-menu {
   padding-top: 16px;
 }
 
-.contacts-header, .locations-header {
+.contacts-header,
+.locations-header {
   font-family: "Georgia";
   font-size: 35px;
   line-height: 45px;
@@ -561,13 +563,19 @@ body.open-menu {
   color: #FFFFFF;
 }
 
-.contacts-mail, .contacts-phone, .locations-boston, .locations-london {
+.contacts-mail,
+.contacts-phone,
+.locations-boston,
+.locations-london {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.name-mail:hover, .phone-number:hover, .boston:hover, .london:hover {
+.name-mail:hover,
+.phone-number:hover,
+.boston:hover,
+.london:hover {
   color: #FFFFFF;
 }
 
@@ -577,7 +585,10 @@ body.open-menu {
   background: url("../../assets/svg/icon-email.svg");
 }
 
-.name-mail, .phone-number, .boston, .london {
+.name-mail,
+.phone-number,
+.boston,
+.london {
   font-family: "Georgia";
   font-size: 20px;
   line-height: 23px;
@@ -613,7 +624,8 @@ body.open-menu {
   background: url("../../assets/svg/footer-puppy.svg");
 }
 
-.contacts-header-320, .locations-header-320 {
+.contacts-header-320,
+.locations-header-320 {
   display: none;
 }
 

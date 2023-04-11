@@ -190,14 +190,14 @@ body.open-menu {
 .about-pets {
   width: 300px;
   height: 408px;
-  background-image: url('../../assets/svg/about-pets.svg'); 
+  background-image: url('../../assets/svg/about-pets.svg');
 }
 
 .content-about {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap:25px;
+  gap: 25px;
 }
 
 .about-header {
@@ -223,7 +223,7 @@ body.open-menu {
 .block-pets {
   background: #F6F6F6;
   padding: 80px 40px 100px 40px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -268,7 +268,8 @@ body.open-menu {
   transition: all 1s;
 }
 
-.button-left:hover, .button-right:hover {
+.button-left:hover,
+.button-right:hover {
   background-color: #FDDCC4;
   cursor: pointer;
 }
@@ -517,7 +518,7 @@ body.open-menu {
   font-size: 15px;
   line-height: 17px;
   letter-spacing: 0.06em;
-  color: #545454; 
+  color: #545454;
 }
 
 .donation-item2 {
@@ -555,7 +556,8 @@ body.open-menu {
   padding-top: 16px;
 }
 
-.contacts-header, .locations-header {
+.contacts-header,
+.locations-header {
   font-family: 'Georgia';
   font-size: 35px;
   line-height: 45px;
@@ -563,13 +565,19 @@ body.open-menu {
   color: #FFFFFF;
 }
 
-.contacts-mail, .contacts-phone, .locations-boston, .locations-london {
+.contacts-mail,
+.contacts-phone,
+.locations-boston,
+.locations-london {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.name-mail:hover, .phone-number:hover, .boston:hover, .london:hover {
+.name-mail:hover,
+.phone-number:hover,
+.boston:hover,
+.london:hover {
   color: #FFFFFF;
 }
 
@@ -579,7 +587,10 @@ body.open-menu {
   background: url('../../assets/svg/icon-email.svg');
 }
 
-.name-mail, .phone-number, .boston, .london {
+.name-mail,
+.phone-number,
+.boston,
+.london {
   font-family: 'Georgia';
   font-size: 20px;
   line-height: 23px;
@@ -615,7 +626,8 @@ body.open-menu {
   background: url('../../assets/svg/footer-puppy.svg');
 }
 
-.contacts-header-320, .locations-header-320 {
+.contacts-header-320,
+.locations-header-320 {
   display: none;
 }
 
@@ -632,8 +644,13 @@ body.open-menu {
 }
 
 @keyframes move-right {
-  from {left: -1080px;}
-  to {left: -2160px;}
+  from {
+    left: -1080px;
+  }
+
+  to {
+    left: -2160px;
+  }
 }
 
 .transition-right {
@@ -642,8 +659,13 @@ body.open-menu {
 }
 
 @keyframes move-left {
-  from {left: -990px;}
-  to {left: 0px;}
+  from {
+    left: -990px;
+  }
+
+  to {
+    left: 0px;
+  }
 }
 
 .transition-left {
@@ -741,13 +763,13 @@ body.open-menu {
 
 .popup-description {
   width: 350px;
-padding: 40px 0;
-font-family: 'Georgia';
-font-weight: 400;
-font-size: 15px;
-line-height: 17px;
-letter-spacing: 0.06em;
-color: #000000;
+  padding: 40px 0;
+  font-family: 'Georgia';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  color: #000000;
 }
 
 .popup-list {
@@ -757,18 +779,18 @@ color: #000000;
 }
 
 .popup-list li::before {
-  color: #F1CDB3; 
-    content: '•'; 
-    padding-right: 10px;
+  color: #F1CDB3;
+  content: '•';
+  padding-right: 10px;
 }
 
 .popup-list li {
   font-family: 'Georgia';
-font-weight: 400;
-font-size: 15px;
-line-height: 17px;
-letter-spacing: 0.06em;
-color: #000000;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  color: #000000;
 }
 
 .popup-list span {

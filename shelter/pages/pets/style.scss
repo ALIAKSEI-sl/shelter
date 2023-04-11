@@ -112,7 +112,7 @@ body.open-menu {
 
 .block-pets {
   padding: 80px 40px 100px 40px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 45px;
@@ -211,7 +211,7 @@ body.open-menu {
   background: url('../../assets/svg/pets-freddie.svg');
 }
 
-.pets-button-items{
+.pets-button-items {
   width: 187px;
   height: 52px;
   font-family: 'Georgia';
@@ -303,7 +303,8 @@ body.open-menu {
   padding-top: 16px;
 }
 
-.contacts-header, .locations-header {
+.contacts-header,
+.locations-header {
   font-family: 'Georgia';
   font-size: 35px;
   line-height: 45px;
@@ -311,7 +312,10 @@ body.open-menu {
   color: #FFFFFF;
 }
 
-.contacts-mail, .contacts-phone, .locations-boston, .locations-london {
+.contacts-mail,
+.contacts-phone,
+.locations-boston,
+.locations-london {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -323,7 +327,10 @@ body.open-menu {
   background: url('../../assets/svg/icon-email.svg');
 }
 
-.name-mail, .phone-number, .boston, .london {
+.name-mail,
+.phone-number,
+.boston,
+.london {
   font-family: 'Georgia';
   font-size: 20px;
   line-height: 23px;
@@ -335,7 +342,10 @@ body.open-menu {
   width: 259px;
 }
 
-.name-mail:hover, .phone-number:hover, .boston:hover, .london:hover {
+.name-mail:hover,
+.phone-number:hover,
+.boston:hover,
+.london:hover {
   color: #FFFFFF;
 }
 
@@ -363,7 +373,8 @@ body.open-menu {
   background: url('../../assets/svg/footer-puppy.svg');
 }
 
-.contacts-header-320, .locations-header-320 {
+.contacts-header-320,
+.locations-header-320 {
   display: none;
 }
 
@@ -474,13 +485,13 @@ body.open-menu {
 
 .popup-description {
   width: 350px;
-padding: 40px 0;
-font-family: 'Georgia';
-font-weight: 400;
-font-size: 15px;
-line-height: 17px;
-letter-spacing: 0.06em;
-color: #000000;
+  padding: 40px 0;
+  font-family: 'Georgia';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  color: #000000;
 }
 
 .popup-list {
@@ -490,18 +501,18 @@ color: #000000;
 }
 
 .popup-list li::before {
-  color: #F1CDB3; 
-    content: '•'; 
-    padding-right: 10px;
+  color: #F1CDB3;
+  content: '•';
+  padding-right: 10px;
 }
 
 .popup-list li {
   font-family: 'Georgia';
-font-weight: 400;
-font-size: 15px;
-line-height: 17px;
-letter-spacing: 0.06em;
-color: #000000;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  color: #000000;
 }
 
 .popup-list span {

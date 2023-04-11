@@ -13,7 +13,7 @@ function changeActiveBurger() {
 
 menuBurger.addEventListener('click', changeActiveBurger);
 burgerWrap.addEventListener('click', (event) => {
-  if(event.target === burgerWrap) {
+  if (event.target === burgerWrap) {
     changeActiveBurger();
   }
 });
@@ -29,13 +29,13 @@ function createNextCard() {
   currentCard = [...nextCard];
   nextCard = [];
 
-  while(nextCard.length < 3) {
+  while (nextCard.length < 3) {
     const random = Math.floor(Math.random() * 8);
-    if(!currentCard.includes(random) && !nextCard.includes(random)) {
+    if (!currentCard.includes(random) && !nextCard.includes(random)) {
       nextCard.push(random)
     }
   }
-  
+
 }
 
 
@@ -43,10 +43,10 @@ const set = new Set();
 let currentCard = [];
 let nextCard = []; // стал текущим
 function initializationCard() {
-  if(set.size === 6) {
+  if (set.size === 6) {
     const card = [...set]
     card.forEach((elem, index) => {
-      if(index < 3) {
+      if (index < 3) {
         currentCard.push(elem);
       } else {
         nextCard.push(elem);
@@ -61,7 +61,7 @@ initializationCard()
 
 petsItem.forEach((item, index) => {
   if (index === 0 || index === 2) {
-    for(let i= 0; i < 3; i++) {
+    for (let i = 0; i < 3; i++) {
       const card = item.children[i];
       card.innerHTML = `
       <div class="pets-photo"></div>
@@ -75,7 +75,7 @@ petsItem.forEach((item, index) => {
     }
 
   } else {
-    for(let i= 0; i < 3; i++) {
+    for (let i = 0; i < 3; i++) {
       const card = item.children[i];
       card.innerHTML = `
       <div class="pets-photo"></div>
@@ -133,7 +133,7 @@ CAROUSEL.addEventListener("animationend", (animationEvent) => {
     document.querySelector("#block-card-active").innerHTML = ITEM_RIGHT.innerHTML;
     ITEM_LEFT.innerHTML = ITEM_ACTIVE_HTML;
   }
- 
+
   createNextCard();
   for (let i = 0; i < 3; i++) {
     const card = nextCardItem.children[i];
@@ -164,13 +164,12 @@ const popupList = document.querySelector(".popup-list");
 petsButton.forEach((btn => btn.addEventListener('click', openPopup)))
 
 function openPopup(event) {
-  const parent = event.target.parentElement; 
+  const parent = event.target.parentElement;
   const name = parent.querySelector(".pets-name").textContent;
   const info = pets.find((item) => {
     return item.name === name;
   })
   popupImg.style.backgroundImage = `url(${info.img})`;
-  console.log(popupName)
   popupName.textContent = info.name;
   popupBreed.textContent = `${info.type} - ${info.breed}`;
   popupDescription.textContent = info.description;
@@ -192,6 +191,6 @@ function closePopup() {
 popupBtt.addEventListener('click', closePopup);
 popupWrap.addEventListener('click', (event) => {
   if (event.target === popupWrap || event.target === popupBlock) {
-    closePopup();    
+    closePopup();
   }
 });
