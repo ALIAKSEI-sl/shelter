@@ -121,15 +121,15 @@ CAROUSEL.addEventListener("animationend", (animationEvent) => {
 
   const ITEM_ACTIVE_HTML = document.querySelector("#block-card-active").innerHTML
 
-  let changedItem;
+  let nextCard;
   if (animationEvent.animationName === "move-left") {
     CAROUSEL.classList.remove("transition-left");
-    changedItem = ITEM_LEFT;
+    nextCard = ITEM_LEFT;
     document.querySelector("#block-card-active").innerHTML = ITEM_LEFT.innerHTML;
     ITEM_RIGHT.innerHTML = ITEM_ACTIVE_HTML;
   } else {
     CAROUSEL.classList.remove("transition-right");
-    changedItem = ITEM_RIGHT;
+    nextCard = ITEM_RIGHT;
     document.querySelector("#block-card-active").innerHTML = ITEM_RIGHT.innerHTML;
     ITEM_LEFT.innerHTML = ITEM_ACTIVE_HTML;
   }
@@ -137,7 +137,7 @@ CAROUSEL.addEventListener("animationend", (animationEvent) => {
   createNextCard();
   console.log(nextCard)
   for (let i = 0; i < 3; i++) {
-    const card = changedItem.children[i];
+    const card = nextCard.children[i];
 
     const photo = card.querySelector('.pets-photo')
     const name = card.querySelector('.pets-name');

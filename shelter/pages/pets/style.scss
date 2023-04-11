@@ -368,3 +368,13 @@ h2 {
 .contacts-header-320, .locations-header-320 {
   display: none;
 }
+
+.button-enabled {
+  cursor: pointer;
+  border: 2px solid #F1CDB3;
+}
+
+.button-enabled:hover {
+  background-color: #FDDCC4;
+}
+
