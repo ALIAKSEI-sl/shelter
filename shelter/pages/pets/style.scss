@@ -262,7 +262,7 @@ body.open-menu {
 }
 
 .button4 {
-  border: 2px solid #F1CDB3;
+  border: 2px solid #CDCDCD;
   background: url('../../assets/svg/included.svg');
   background-repeat: no-repeat;
   background-position: center center;
@@ -270,17 +270,11 @@ body.open-menu {
 }
 
 .button5 {
-  border: 2px solid #F1CDB3;
+  border: 2px solid #CDCDCD;
   background: url('../../assets/svg/includedtwo.svg');
   background-repeat: no-repeat;
   background-position: center center;
   transition: all 1s;
-}
-
-.button4:hover, .button5:hover {
-  background-color: #FDDCC4;
-  // transform: scale(1.2);
-  cursor: pointer;
 }
 
 .footer {
@@ -376,6 +370,18 @@ body.open-menu {
 .button-enabled {
   cursor: pointer;
   border: 2px solid #F1CDB3;
+}
+
+.button-enabled.button1 {
+  background: url('../../assets/svg/disabledtwoUn.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.button-enabled.button2 {
+  background: url('../../assets/svg/disabledUn.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .button-enabled:hover {

@@ -200,7 +200,7 @@ if (width0.matches) {
   if(+(button3.textContent) < 6) {
       button3.textContent = +button3.textContent + 1;
       button1.classList.add('button-enabled');
-      button2.classList.add('button-enabled');        
+      button2.classList.add('button-enabled');
   }    
   if (+(button3.textContent) === 2) {
       petsPhoto1.style.background = petsArray[8]["img"];
