@@ -145,13 +145,13 @@ CAROUSEL.addEventListener("animationend", (animationEvent) => {
     name.textContent = `${pets[[nextCard[i]]].name}`;
     // btn.addEventListener('click', openPopup)
   }
-  const petsButton = document.querySelectorAll(".pets-button-items");
-  petsButton.forEach((btn => btn.addEventListener('click', openPopup)))
+  const petsCard = document.querySelectorAll(".pets-items");
+  petsCard.forEach((card => card.addEventListener('click', openPopup)))
   BTN_LEFT.addEventListener("click", moveLeft);
   BTN_RIGHT.addEventListener("click", moveRight);
 })
 
-const petsButton = document.querySelectorAll(".pets-button-items");
+// const petsButton = document.querySelectorAll(".pets-button-items");
 const popupWrap = document.querySelector(".popup-wrap");
 const popupBtt = document.querySelector(".popup-btt");
 const popupBlock = document.querySelector(".popup-block");
@@ -160,12 +160,13 @@ const popupName = document.querySelector(".popup-name");
 const popupBreed = document.querySelector(".popup-breed");
 const popupDescription = document.querySelector(".popup-description");
 const popupList = document.querySelector(".popup-list");
+const petsCard = document.querySelectorAll(".pets-items");
 
-petsButton.forEach((btn => btn.addEventListener('click', openPopup)))
+petsCard.forEach((card => card.addEventListener('click', openPopup)))
 
 function openPopup(event) {
-  const parent = event.target.parentElement;
-  const name = parent.querySelector(".pets-name").textContent;
+  // const parent = event.target.parentElement;
+  const name = event.currentTarget.querySelector(".pets-name").textContent;
   const info = pets.find((item) => {
     return item.name === name;
   })
