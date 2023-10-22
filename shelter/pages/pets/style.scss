@@ -3,13 +3,13 @@
 
 @font-face {
   font-family: 'Georgia';
-  src: url("../../assets/fonts/georgia/georgia-regular.ttf");
+  src: url('../../assets/fonts/georgia/georgia-regular.ttf');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Arial';
-  src: url("../../assets/fonts/arial/arial-regular.ttf");
+  src: url('../../assets/fonts/arial/arial-regular.ttf');
   font-weight: 400;
 }
 
@@ -64,7 +64,7 @@ body.open-menu {
 }
 
 .logo-header {
-  font-family: "Georgia";
+  font-family: 'Georgia';
   font-weight: 400;
   font-size: 32px;
   letter-spacing: 0.054em;
@@ -72,7 +72,7 @@ body.open-menu {
 }
 
 .logo-item {
-  font-family: "Arial";
+  font-family: 'Arial';
   font-size: 13px;
   line-height: 15px;
   letter-spacing: 0.1em;
@@ -91,14 +91,14 @@ body.open-menu {
 }
 
 .menu-item {
-  font-family: "Arial";
+  font-family: 'Arial';
   font-size: 15px;
   line-height: 24px;
   color: #545454;
 }
 
 .menu li:nth-child(2) {
-  border-bottom: 3px solid #F1CDB3;
+  border-bottom: 3px solid #f1cdb3;
 }
 
 .menu li:nth-child(2) .menu-item {
@@ -107,7 +107,7 @@ body.open-menu {
 }
 
 .section-pets {
-  background: #F6F6F6;
+  background: #f6f6f6;
 }
 
 .block-pets {
@@ -145,70 +145,26 @@ body.open-menu {
   letter-spacing: 0.06em;
   color: #545454;
   align-items: center;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   border-radius: 9px;
   transition: all 1s;
 }
 
 .pets-items:hover {
   cursor: pointer;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 
   .pets-button-items {
-    background: #FDDCC4;
+    background: #fddcc4;
     cursor: pointer;
     border: none;
-
   }
 }
 
-.pets-photo1 {
+.pets-photo {
   width: 270px;
   height: 270px;
-  background: url('../../assets/svg/pets-katrine.svg');
-}
-
-.pets-photo2 {
-  width: 270px;
-  height: 270px;
-  background: url('../../assets/svg/pets-jennifer.svg');
-}
-
-.pets-photo3 {
-  width: 270px;
-  height: 270px;
-  background: url('../../assets/svg/pets-woody.svg');
-}
-
-.pets-photo4 {
-  width: 270px;
-  height: 270px;
-  background: url('../../assets/svg/pets-sophia.svg');
-}
-
-.pets-photo5 {
-  width: 270px;
-  height: 270px;
-  background: url('../../assets/svg/pets-timmy.svg');
-}
-
-.pets-photo6 {
-  width: 270px;
-  height: 270px;
-  background: url('../../assets/svg/pets-charly.svg');
-}
-
-.pets-photo7 {
-  width: 270px;
-  height: 270px;
-  background: url('../../assets/svg/pets-scarlet.svg');
-}
-
-.pets-photo8 {
-  width: 270px;
-  height: 270px;
-  background: url('../../assets/svg/pets-freddie.svg');
 }
 
 .pets-button-items {
@@ -218,11 +174,11 @@ body.open-menu {
   font-size: 17px;
   line-height: 22px;
   color: #292929;
-  border: 2px solid #F1CDB3;
+  border: 2px solid #f1cdb3;
   border-radius: 100px;
   margin-bottom: 30px;
   letter-spacing: 0.06em;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   transition: all 1s;
 }
 
@@ -239,21 +195,23 @@ body.open-menu {
 }
 
 .button1 {
-  background: url('../../assets/svg/disabledtwo.svg');
-  border: 2px solid #CDCDCD;
+  background: url('../../assets/svg/disabledtwoUn.svg');
+  border: 2px solid #f1cdb3;
   background-repeat: no-repeat;
   background-position: center center;
+  cursor: pointer;
 }
 
 .button2 {
-  background: url('../../assets/svg/disabled.svg');
-  border: 2px solid #CDCDCD;
+  background: url('../../assets/svg/disabledUn.svg');
+  border: 2px solid #f1cdb3;
   background-repeat: no-repeat;
   background-position: center center;
+  cursor: pointer;
 }
 
 .button3 {
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
   font-family: 'Georgia';
   font-size: 20px;
   line-height: 23px;
@@ -262,19 +220,30 @@ body.open-menu {
 }
 
 .button4 {
-  border: 2px solid #CDCDCD;
+  border: 2px solid #f1cdb3;
   background: url('../../assets/svg/included.svg');
   background-repeat: no-repeat;
   background-position: center center;
   transition: all 1s;
+  cursor: pointer;
 }
 
 .button5 {
-  border: 2px solid #CDCDCD;
+  border: 2px solid #f1cdb3;
   background: url('../../assets/svg/includedtwo.svg');
   background-repeat: no-repeat;
   background-position: center center;
   transition: all 1s;
+  cursor: pointer;
+}
+
+.button-pets:not(:disabled):hover {
+  background-color: #f1cdb3;
+}
+
+.button-pets:disabled {
+  border: 2px solid #cdcdcd;
+  cursor: auto;
 }
 
 .footer {
@@ -309,7 +278,7 @@ body.open-menu {
   font-size: 35px;
   line-height: 45px;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .contacts-mail,
@@ -335,7 +304,7 @@ body.open-menu {
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.06em;
-  color: #F1CDB3;
+  color: #f1cdb3;
 }
 
 .boston {
@@ -346,7 +315,7 @@ body.open-menu {
 .phone-number:hover,
 .boston:hover,
 .london:hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .icon-phone {
@@ -378,27 +347,6 @@ body.open-menu {
   display: none;
 }
 
-.button-enabled {
-  cursor: pointer;
-  border: 2px solid #F1CDB3;
-}
-
-.button-enabled.button1 {
-  background: url('../../assets/svg/disabledtwoUn.svg');
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.button-enabled.button2 {
-  background: url('../../assets/svg/disabledUn.svg');
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.button-enabled:hover {
-  background-color: #FDDCC4;
-}
-
 .popup-wrap {
   display: none;
   position: fixed;
@@ -420,7 +368,7 @@ body.open-menu {
   width: 900px;
   height: 500px;
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-  background: #FAFAFA;
+  background: #fafafa;
   border-radius: 9px;
   margin-bottom: 52px;
 }
@@ -435,7 +383,7 @@ body.open-menu {
   left: 890px;
   width: 52px;
   height: 52px;
-  border: 2px solid #F1CDB3;
+  border: 2px solid #f1cdb3;
   border-radius: 100px;
   background-image: url(../../assets/svg/close.svg);
   background-position: center center;
@@ -443,7 +391,7 @@ body.open-menu {
 }
 
 .popup-btt:hover {
-  background: #FDDCC4;
+  background: #fddcc4;
   cursor: pointer;
   background-image: url(../../assets/svg/close.svg);
   background-position: center center;
@@ -480,7 +428,6 @@ body.open-menu {
   line-height: 23px;
   letter-spacing: 0.06em;
   color: #000000;
-
 }
 
 .popup-description {
@@ -501,7 +448,7 @@ body.open-menu {
 }
 
 .popup-list li::before {
-  color: #F1CDB3;
+  color: #f1cdb3;
   content: '•';
   padding-right: 10px;
 }
