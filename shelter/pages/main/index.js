@@ -1,4 +1,4 @@
-import pets from './pets.json' assert {type: 'json'};
+const pets = await fetch('./pets.json').then((res) => res.json());
 
 //burger
 const burgerWrap = document.querySelector('.burger-wrapper');
@@ -117,8 +117,6 @@ BTN_RIGHT.addEventListener("click", moveRight);
 
 
 CAROUSEL.addEventListener("animationend", (animationEvent) => {
-
-
   const ITEM_ACTIVE_HTML = document.querySelector("#block-card-active").innerHTML
 
   let nextCardItem;
@@ -135,23 +133,23 @@ CAROUSEL.addEventListener("animationend", (animationEvent) => {
   }
 
   createNextCard();
+
   for (let i = 0; i < 3; i++) {
     const card = nextCardItem.children[i];
 
     const photo = card.querySelector('.pets-photo')
     const name = card.querySelector('.pets-name');
-    // const btn = card.querySelector('.pets-button-items');
+
     photo.style.background = `url(${pets[[nextCard[i]]].img})`;
     name.textContent = `${pets[[nextCard[i]]].name}`;
-    // btn.addEventListener('click', openPopup)
   }
+
   const petsCard = document.querySelectorAll(".pets-items");
   petsCard.forEach((card => card.addEventListener('click', openPopup)))
   BTN_LEFT.addEventListener("click", moveLeft);
   BTN_RIGHT.addEventListener("click", moveRight);
 })
 
-// const petsButton = document.querySelectorAll(".pets-button-items");
 const popupWrap = document.querySelector(".popup-wrap");
 const popupBtt = document.querySelector(".popup-btt");
 const popupBlock = document.querySelector(".popup-block");
@@ -165,7 +163,6 @@ const petsCard = document.querySelectorAll(".pets-items");
 petsCard.forEach((card => card.addEventListener('click', openPopup)))
 
 function openPopup(event) {
-  // const parent = event.target.parentElement;
   const name = event.currentTarget.querySelector(".pets-name").textContent;
   const info = pets.find((item) => {
     return item.name === name;
