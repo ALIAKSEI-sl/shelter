@@ -1,4 +1,4 @@
-import pets from '../main/pets.json' assert { type: 'json' };
+const pets = await fetch('../main/pets.json').then((res) => res.json())
 
 const burgerWrap = document.querySelector('.burger-wrapper');
 const menuBurger = document.querySelector('.menu-burger');
